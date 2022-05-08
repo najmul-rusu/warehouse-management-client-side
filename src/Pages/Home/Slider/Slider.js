@@ -13,8 +13,8 @@ const Slider = () => {
       <Carousel.Item>
         <img className="d-block w-100 tales" src={slider01} alt="First slide" />
         <Carousel.Caption>
-          <h3>Summer Sale</h3>
-          <p>Up to 50% OFF</p>
+          <h3>New Here</h3>
+          <p>Available in stock</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
