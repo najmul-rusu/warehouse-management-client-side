@@ -1,0 +1,9 @@
+.sec{
+    text-align: center;
+    margin: 50px;
+}
+.error-msg{
+    font-size: 150px;
+    font-weight: 900;
+    color: red;
+}
