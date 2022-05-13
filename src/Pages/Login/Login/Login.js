@@ -55,7 +55,7 @@ const Login = () => {
 
   return (
     <div className=" w-25 mx-auto my-4">
-      <h2 className="text-center">Login</h2>
+      <h2 className="text-center text-secondary">Login</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
@@ -74,7 +74,7 @@ const Login = () => {
             required
           />
         </Form.Group>
-        <Button variant="danger w-50 mx-auto d-block mb-2" type="submit">
+        <Button variant="secondary w-50 mx-auto d-block mb-2" type="submit">
           Login
         </Button>
       </Form>

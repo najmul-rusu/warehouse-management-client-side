@@ -13,10 +13,10 @@ const Header = () => {
     }
     return (
         <div>
-            <Navbar collapseOnSelect sticky='top' expand="lg" bg="danger" variant="dark">
+            <Navbar collapseOnSelect sticky='top' expand="lg" bg="secondary" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
-                        <img height={30} src={logo} alt="" />
+                        <img height={35} src={logo} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -24,6 +24,7 @@ const Header = () => {
                             {/* <Nav.Link href="home#services">Services</Nav.Link> */}
                             <Nav.Link as={Link} to="blog">Blog</Nav.Link>
                             <Nav.Link as={Link} to="about">About</Nav.Link>
+                            <Nav.Link as={Link} to="inventory-items">Inventory</Nav.Link>
                         </Nav>
                         <Nav>
                             {

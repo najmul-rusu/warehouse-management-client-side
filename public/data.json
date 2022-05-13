@@ -1,0 +1,83 @@
+[
+    {
+      "_id": "1",
+      "picture": "https://i.ibb.co/HGy9RZ3/Realme-GT-Master-Edition-image.jpg",
+      "name": "Realme GT",
+      "description": "Realme GT Master Edition comes with 6.43 inches Full HD+ Super AMOLED screen. It has a Full-View left punch-hole design.",
+      "price": 31990,
+      "quantity": 29,
+      "supplier_name": "Milton"
+    },
+    {
+      "_id": "2",
+      "picture": "https://i.ibb.co/GngLMFK/Samsung-Galaxy-A73-5-G.jpg",
+      "name": "Samsung Galaxy A23",
+      "description": "Samsung Galaxy A23 comes with 6.6 inches Full HD+ PLS TFT screen. It has a waterdrop notch front camera design.",
+      "price": 25599,
+      "quantity": 37,
+      "supplier_name": "Myrtle"
+    },
+    {
+      "_id": "3",
+      "picture": "https://i.ibb.co/WxQtjF7/Xiaomi-Redmi-10-C.jpg",
+      "name": "Xiaomi Redmi 10C",
+      "description": "Xiaomi Redmi 10C comes with 6.71 inches HD+ screen. It has a Full-View waterdrop notch design.",
+      "price": 13999,
+      "quantity": 25,
+      "supplier_name": "Hallie"
+    },
+    {
+      "_id": "4",
+      "picture": "https://i.ibb.co/Rj70LqL/Oppo-A16e.jpg",
+      "name": "Oppo A16e",
+      "description": "Oppo A16e comes with 6.52 inches HD+ screen. It has a Full-View waterdrop notch design.",
+      "price": 12990,
+      "quantity": 38,
+      "supplier_name": "Kelley"
+    },
+    {
+      "_id": "5",
+      "picture": "https://i.ibb.co/nDgqh6c/Infinix-Note-12.jpg",
+      "name": "Infinix Note 12",
+      "description": "Infinix Note 12 comes with 6.7 inches Full HD+ AMOLED screen. It has a waterdrop notch front camera design.",
+      "price": 18299,
+      "quantity": 36,
+      "supplier_name": "Katelyn"
+    },
+    {
+      "_id": "6",
+      "picture": "https://i.ibb.co/3hjpj5S/Xiaomi-Redmi-10-A.jpg",
+      "name": "Xiaomi Redmi 10A",
+      "description": "Xiaomi Redmi 10A comes with 6.53 inches HD+ screen. It has a Full-View waterdrop notch design.",
+      "price": 11999,
+      "quantity": 30,
+      "supplier_name": "Simon"
+    },
+    {
+      "_id": "7",
+      "picture": "https://i.ibb.co/XCjWD2g/Xiaomi-12-Pro.jpg",
+      "name": "Xiaomi 12 Pro",
+      "description": "Xiaomi 12 Pro comes with 6.73 inches Quad HD+ LTPO AMOLED screen. It has a Full-View center punch-hole design.",
+      "price": 109999,
+      "quantity": 39,
+      "supplier_name": "Gill"
+    },
+    {
+        "_id": "8",
+        "picture": "https://i.ibb.co/DrNpBdF/Walton-Primo-GH11.jpg",
+        "name": "Walton Primo GH11",
+        "description": "Walton Primo GH11 comes with 6.52 inches large HD+ IPS screen. It has a full-view waterdrop notch design.",
+        "price": 7599,
+        "quantity": 30,
+        "supplier_name": "Simon"
+      },
+      {
+        "_id": "9",
+        "picture": "https://i.ibb.co/GngLMFK/Samsung-Galaxy-A73-5-G.jpg",
+        "name": "Samsung Galaxy A73 5G",
+        "description": "Samsung Galaxy A73 5G comes with 6.7 inches Full HD+ Super AMOLED Plus screen. It has a center punch-hole front camera design.",
+        "price": 59499,
+        "quantity": 39,
+        "supplier_name": "Gill"
+      }
+  ]
