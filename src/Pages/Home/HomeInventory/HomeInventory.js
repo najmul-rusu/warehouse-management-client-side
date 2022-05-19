@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import InventoryData from "../../../hooks/InventoryData";
 import ShowInventoryItems from "../../InventoryItems/ShowInventoryItems";
 
 const HomeInventory = () => {
-
+    
   const [inventorys] = InventoryData();
   return (
     <div className="container">

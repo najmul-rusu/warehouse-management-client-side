@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 const InventoryData = () => {
     const [inventorys , setInventorys] = useState([])
     useEffect(()=>{
-        fetch('data.json')
+        fetch('http://localhost:5000/inventory-items')
           .then(res => res.json())
           .then(data => setInventorys(data))
     },[])

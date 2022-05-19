@@ -12,6 +12,7 @@ import TopHeader from './Pages/Shared/Header/TopHeader/TopHeader';
 import InventoryItems from './Pages/InventoryItems/InventoryItems';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import InventoryItem from './Pages/InventoryItem/InventoryItem';
+import AddItem from './AddItem/AddItem';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/inventory/:inventoryId' element={
           <RequireAuth>
             <InventoryItem></InventoryItem>
@@ -28,6 +30,7 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/inventory-items' element={<InventoryItems></InventoryItems>}></Route>
+        <Route path='/add-item' element={<AddItem></AddItem>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>} />
