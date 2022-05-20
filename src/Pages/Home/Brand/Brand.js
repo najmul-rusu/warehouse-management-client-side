@@ -12,8 +12,8 @@ import Infinix from "../../../Images/Phone Brand/Infinix.png";
 
 const Brand = () => {
   return (
-    <div className="container my-5">
-      <h3 className="text-center fs-1 mb-5 bg-light p-3">Find by Brand</h3>
+    <div className="container my-3">
+      <h3 className="text-center fs-1  bg-light p-3">Find by Brand</h3>
       <div className="d-flex">
         <div className="">
           <img className="w-75" src={iPhone} alt="iPhone" />

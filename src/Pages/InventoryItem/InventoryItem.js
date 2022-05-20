@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import './InventoryItem.css'
 
 const InventoryItem = () => {
 
@@ -44,7 +45,7 @@ const handleForm = (event) => {
     const newQuantity = {
         quantity: (quantity + amount),
     }
-    console.log(newQuantity)
+
     const url = `http://localhost:5000/inventory/${inventoryId}`;
     fetch(url, {
         method: 'PUT',
@@ -58,39 +59,42 @@ const handleForm = (event) => {
 }
 return (
     <div className='container '>
-        <div className="card border-0 my-4" >
+        <div className="card border-0 my-5" >
             <div className="row g-0 shadow  my-4 bg-light rounded text-start">
-                <div className="col-md-4">
+                <div className="col-sm-4">
                     <img src={picture} className="img-fluid rounded-start" alt="..." />
                 </div>
-                <div className="col-md-8 P-0">
-                    <div className="card-body p-2 px-4">
+                <div className="col-sm-8 P-0">
+                    <div className="card-body p-5 px-4">
                         <h5 className="card-title">{name}</h5>
                         <p><b>Price: </b>{price}</p>
                         <p className="card-text">{description}</p>
                         <p><b>Quantity: </b>{quantity}</p>
                         <p><b>SuplierName: </b>{supplier_name}</p>
                         <div className='d-grid mt-2 w-50'>
-                            <button className='m-2 btn btn-primary' onClick={() => setReStock(!reStock)}>Restock</button>
+                            <button className='m-2 btn btn-secondary' onClick={() => setReStock(!reStock)}>Restock</button>
 
-                            <button className='m-2 btn btn-danger' onClick={handleDeliver}>Delivered</button>
-                            <button onClick={() => navigate('/manage-items')} className='m-2 btn btn-success'>Manage Invenotires</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {reStock && (
+                            {/* Restock input and submit  */}
+                            {reStock && (
                             <div className="inventory_restock">
                                 <form onSubmit={handleForm}>
-                                    <div className="inventory_restock_input_field">
-                                        <input className="inventory_restock_input_field" type="number" name="amount" placeholder="Enter Amount" />
+                                    <div className="inventory__restock__field">
+                                        <input className="inventory__restock__field" type="number" name="amount" placeholder="Enter Number" />
                                     </div>
-                                    <div className="inventory_restock_input_field">
-                                        <input className="inventory_restock_input_field" type="submit" value="Submit" />
+                                    <div className="inventory__restock__field">
+                                        <input className="inventory__restock__field" type="submit" value="Submit" />
                                     </div>
                                 </form>
                             </div>
                         )}
+                        </div>
+                        <div className="d-grid mt-2 w-50">
+                            <button className='m-2 btn btn-dark' onClick={handleDeliver}>Delivered</button>
+                            <button onClick={() => navigate('/manage-items')} className='m-2 btn btn-success'>Manage</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 );

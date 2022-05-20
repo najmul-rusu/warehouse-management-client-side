@@ -6,7 +6,7 @@ const Blog = () => {
     <div className="qna">
       <h2 className="qna-title">Question and Answer</h2>
       {/* Question and Answer - 01  */}
-      <h4 className="mt-5">Difference between javascript and node js</h4>
+      <h4 className="mt-5 ms-2">Difference between javascript and node js</h4>
       <div>
         <table>
           <thead>
@@ -51,18 +51,18 @@ const Blog = () => {
         </table>
       </div>
       {/* Question and Answer - 02*/}
-      <h4 className="mt-5">When should you use nodejs and when should you use mongodb?</h4>
-      <p>
+      <h4 className="mt-5 ms-2">When should you use nodejs and when should you use mongodb?</h4>
+      <p className="ms-2">
         Nodejs : Node.js is an interpreter or runtime / running environment for
         JavaScript. Built on Chrome's V8 JavaScript engine. Responsibilities
         especially make your application effective.
       </p>
-      <p>
+      <p className="ms-2">
         MongoDB : A No-SQL database for storing data. When high availability of
         data is required with automatic, fast, and instant data recovery.
       </p>
       {/* Question and Answer - 03*/}
-      <h4 className="mt-5">Differences between SQL and NoSQL databases.</h4>
+      <h4 className="mt-5 ms-2">Differences between SQL and NoSQL databases.</h4>
       <div>
         <table>
           <thead>

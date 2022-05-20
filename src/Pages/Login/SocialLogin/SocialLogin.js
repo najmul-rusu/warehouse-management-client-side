@@ -19,7 +19,7 @@ const SocialLogin = () => {
     }
 
     if (user) {
-        navigate('/home')
+        navigate('/')
     }
     return (
         <div>

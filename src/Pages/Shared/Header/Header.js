@@ -1,16 +1,21 @@
 import { signOut } from 'firebase/auth';
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import logo from '../../../Images/Logo.png'
 
 const Header = () => {
+    
+
     const [user] = useAuthState(auth)
     const handleSignOut =() =>{
         signOut(auth)
     }
+    const [menu, setMenu] = useState(false);
+    // const [mobileMenu, setMobileMenu] = useState(false);
+    const navigate = useNavigate();
     return (
         <div>
             <Navbar collapseOnSelect sticky='top' expand="lg" bg="secondary" variant="dark">
@@ -28,16 +33,28 @@ const Header = () => {
                             <Nav.Link as={Link} to="add-item">Add Item</Nav.Link>
                             <Nav.Link as={Link} to="manage-items">Manage Items</Nav.Link>
                         </Nav>
-                        <Nav>
+                        <div>
                             {
                                 user?
-                                    <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Log Out</button>
+                                    <div>
+                                        <button className='btn btn-link text-white text-decoration-none' onClick={() => navigate('/my-item')}>
+                                            My Item
+                                        </button>
+                                        <button className='btn btn-link text-white text-decoration-none' onClick={() => navigate('/add-item')}>
+                                            Add Item
+                                        </button>
+                                        <button className='btn btn-link text-white text-decoration-none' onClick={() => navigate('/manage-items')}>
+                                            Manage Item
+                                        </button>
+                                        <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Log Out</button>
+                                    </div>
                                 :
                                 
-                                <Nav.Link as={Link} to="login">
+                                <Nav.Link className="text-light" as={Link} to="login">
                                 Login
                             </Nav.Link>}
-                        </Nav>
+                        </div>
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

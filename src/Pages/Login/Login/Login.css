@@ -1,0 +1,95 @@
+.Login {
+    padding: 100px 0;
+}
+
+.login__title {
+    text-align: center;
+}
+
+.login__title h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+}
+
+.login__form {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.input__group {
+    margin-bottom: 15px;
+}
+
+.input__group label {
+    color: black;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.input__group input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input__group input[type="submit"] {
+    border: none;
+    background: #000000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.account__login {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.account__login a {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+}
+
+.google__login {
+    text-align: center;
+}
+
+.google__login h4 {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.google__login button {
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    background: gray;
+    color: white;
+    cursor: pointer;
+}
+
+@media all and (min-width: 200px) and (max-width: 768px) {
+    .login__form {
+        width: 100%;
+        padding: 30px;
+    }
+}
