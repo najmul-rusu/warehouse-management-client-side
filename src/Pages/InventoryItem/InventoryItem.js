@@ -11,7 +11,7 @@ const [res, setRes] = useState({});
 const [reStock, setReStock] = useState(false);
 
 useEffect(() => {
-    const url = `http://localhost:5000/inventory/${inventoryId}`;
+    const url = `https://salty-lowlands-35134.herokuapp.com/inventory/${inventoryId}`;
     fetch(url)
         .then(res => res.json())
         .then(data => setInventory(data));
@@ -25,7 +25,7 @@ const handleDeliver = () => {
             quantity: (quantity - 1)
         };
 
-        const url = `http://localhost:5000/inventory/${inventoryId}`;
+        const url = `https://salty-lowlands-35134.herokuapp.com/inventory/${inventoryId}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -46,7 +46,7 @@ const handleForm = (event) => {
         quantity: (quantity + amount),
     }
 
-    const url = `http://localhost:5000/inventory/${inventoryId}`;
+    const url = `https://salty-lowlands-35134.herokuapp.com/inventory/${inventoryId}`;
     fetch(url, {
         method: 'PUT',
         headers: {

@@ -11,7 +11,7 @@ const ManageItems = () => {
     ;
             const proceed = window.confirm('Are you Sure?');
             if (proceed) {
-                const url = `http://localhost:5000/inventory/${id}`;
+                const url = `https://salty-lowlands-35134.herokuapp.com/inventory/${id}`;
                 fetch(url, {
                     method: 'DELETE'
                 })
