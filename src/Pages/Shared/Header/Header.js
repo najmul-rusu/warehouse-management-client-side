@@ -1,5 +1,4 @@
 import { signOut } from 'firebase/auth';
-import React, { useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
@@ -13,8 +12,6 @@ const Header = () => {
     const handleSignOut =() =>{
         signOut(auth)
     }
-    const [menu, setMenu] = useState(false);
-    // const [mobileMenu, setMobileMenu] = useState(false);
     const navigate = useNavigate();
     return (
         <div>
